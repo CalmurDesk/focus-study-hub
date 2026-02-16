@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Focus Study Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Focus Study Hub</h1>
+
+    <div class="card">
+        <h2 id="timer">25:00</h2>
+        <div class="buttons">
+            <button onclick="startTimer()">Start</button>
+            <button onclick="pauseTimer()">Pause</button>
+            <button onclick="resetTimer()">Reset</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <h3>Background Sounds</h3>
+        <button onclick="playSound('rain')">Rain</button>
+        <button onclick="playSound('lofi')">Lofi</button>
+        <button onclick="stopSound()">Stop</button>
+    </div>
+
+    <div class="card">
+        <p id="quote"></p>
+    </div>
+</div>
+
+<audio id="rain" loop>
+    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="lofi" loop>
+    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3" type="audio/mpeg">
+</audio>
+
+<script src="script.js"></script>
+</body>
+</html>
